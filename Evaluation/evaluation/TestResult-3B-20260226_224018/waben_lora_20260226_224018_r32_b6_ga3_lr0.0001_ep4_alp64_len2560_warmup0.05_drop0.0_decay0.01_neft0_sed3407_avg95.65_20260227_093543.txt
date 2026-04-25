@@ -1,0 +1,65 @@
+Model Evaluation Report
+================================================================================
+Model Name: waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407
+Base Model: unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit
+Model Directory: /workspace/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407
+Evaluation Time: 20260227_093543
+Average Score: 95.646701
+Average Response Time (s): 36.916257
+Total Tested Samples: 48
+
+Per-split summary:
+       sample_count  avg_score  avg_latency_s
+split                                        
+train            45  95.430556      36.927693
+val               3  98.888889      36.744720
+
+Step-count sample distribution:
+split  step_count
+train  15            15
+       16            15
+       17            15
+val    15             1
+       16             1
+       17             1
+
+Step-count total distribution (train+val):
+step_count
+15    16
+16    16
+17    16
+
+Step-count quality summary (train+val combined):
+            sample_count  avg_score  avg_wrong_step  avg_extra_step  avg_missing  avg_wrong_order  avg_attr_mismatch
+step_count                                                                                                          
+15                    16  97.291667          0.0000             0.0          0.0              0.0             0.8125
+16                    16  92.773438          0.4375             0.0          0.0              0.0             0.5625
+17                    16  96.875000          0.0000             0.0          0.0              0.0             1.0625
+
+Score distribution bins:
+score
+[0.0, 20.0)       1
+[20.0, 40.0)      0
+[40.0, 60.0)      0
+[60.0, 80.0)      0
+[80.0, 90.0)      0
+[90.0, 95.0)     11
+[95.0, 100.0)    36
+
+Latency distribution bins:
+[34.370755, 35.145352) -> 15
+[35.145352, 35.919948) -> 1
+[35.919948, 36.694545) -> 10
+[36.694545, 37.469142) -> 5
+[37.469142, 38.243738) -> 1
+[38.243738, 39.018335) -> 0
+[39.018335, 39.792931) -> 16
+
+Saved Plots:
+/workspace/evaluation/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_step_distribution_20260227_093543.png
+/workspace/evaluation/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_quality_by_step_count_20260227_093543.png
+/workspace/evaluation/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_score_distribution_20260227_093543.png
+/workspace/evaluation/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_latency_distribution_20260227_093543.png
+
+Terminal Log:
+/workspace/evaluation/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260226_224018_r32_b6_ga3_lr0.0001_ep4_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_terminal_20260227_093543.log

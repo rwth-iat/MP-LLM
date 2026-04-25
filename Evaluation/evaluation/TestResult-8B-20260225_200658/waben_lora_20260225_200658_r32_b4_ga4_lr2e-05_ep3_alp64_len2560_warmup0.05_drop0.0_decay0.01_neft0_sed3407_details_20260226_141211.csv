@@ -1,0 +1,1634 @@
+split,row_id,step_count,score,latency_s,format_ok,replace_count,missing_count,wrong_order_count,cost_dur_mismatch_count,extra_count,prediction,reference
+train,2,15,100.0,45.00983818696113,True,0,0,0,0,0,"Step 1 | Op: Connect(HC30_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 8.0 litre) | Cost: 24.000 | Dur: 80.000
+Step 3 | Op: Connect(HC40_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (A: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 5 | Op: Connect(HC20_Out1 -> HC30_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 7 | Op: Stirring (HC30), 250rpm for 1000.0s | Cost: 2.000 | Dur: 1000.000
+Step 8 | Op: Usage (HC30), 1100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 300.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC20), (C: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC40), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 8.0 litre) | Cost: 24.000 | Dur: 80.000
+Step 3 | Op: Connect(HC40_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (A: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 5 | Op: Connect(HC20_Out1 -> HC30_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 7 | Op: Stirring (HC30), 250rpm for 1000.0s | Cost: 2.000 | Dur: 1000.000
+Step 8 | Op: Usage (HC30), 1100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 300.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC20), (C: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC40), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,27,15,96.66666666666667,43.25142084690742,True,0,0,0,1,0,"Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 5 | Op: Connect(HC20_Out1 -> HC40_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC40), 250rpm for 900.0s | Cost: 3.000 | Dur: 900.000
+Step 8 | Op: Usage (HC40), 1900.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 500.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out2 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (C: 4.0 litre) | Cost: 12.000 | Dur: 13.333
+Step 5 | Op: Connect(HC20_Out1 -> HC40_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC40), 250rpm for 900.0s | Cost: 3.000 | Dur: 900.000
+Step 8 | Op: Usage (HC40), 1900.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 500.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out2 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,6,15,100.0,43.1360172679706,True,0,0,0,0,0,"Step 1 | Op: Connect(HC40_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (B: 10.0 litre) | Cost: 30.000 | Dur: 100.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (C: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 7 | Op: Stirring (HC40), 50rpm for 100.0s | Cost: 2.000 | Dur: 100.000
+Step 8 | Op: Usage (HC40), 2000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 600.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC10), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (B: 10.0 litre) | Cost: 30.000 | Dur: 100.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (C: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 7 | Op: Stirring (HC40), 50rpm for 100.0s | Cost: 2.000 | Dur: 100.000
+Step 8 | Op: Usage (HC40), 2000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 600.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC10), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,18,15,96.66666666666667,43.15742712499923,True,0,0,0,1,0,"Step 1 | Op: Connect(HC10_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 5 | Op: Connect(HC20_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 7 | Op: Stirring (HC10), 200rpm for 300.0s | Cost: 1.000 | Dur: 300.000
+Step 8 | Op: Usage (HC10), 3300.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 800.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (B: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC40), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 5 | Op: Connect(HC20_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 7 | Op: Stirring (HC10), 200rpm for 300.0s | Cost: 1.000 | Dur: 300.000
+Step 8 | Op: Usage (HC10), 3300.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 800.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (B: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC40), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,8,15,100.0,43.33391152205877,True,0,0,0,0,0,"Step 1 | Op: Connect(HC30_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 8.0 litre) | Cost: 24.000 | Dur: 40.000
+Step 3 | Op: Connect(HC20_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 5 | Op: Connect(HC40_Out1 -> HC30_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Stirring (HC30), 50rpm for 1000.0s | Cost: 1.000 | Dur: 1000.000
+Step 8 | Op: Usage (HC30), 1100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 800.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC40), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC20), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 8.0 litre) | Cost: 24.000 | Dur: 40.000
+Step 3 | Op: Connect(HC20_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 5 | Op: Connect(HC40_Out1 -> HC30_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Stirring (HC30), 50rpm for 1000.0s | Cost: 1.000 | Dur: 1000.000
+Step 8 | Op: Usage (HC30), 1100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 800.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC40), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC20), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,24,15,100.0,42.8743617280561,True,0,0,0,0,0,"Step 1 | Op: Connect(HC10_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 3 | Op: Connect(HC30_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC40_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC10), 150rpm for 800.0s | Cost: 3.000 | Dur: 800.000
+Step 8 | Op: Usage (HC10), 600.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 600.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 3 | Op: Connect(HC30_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC40_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC10), 150rpm for 800.0s | Cost: 3.000 | Dur: 800.000
+Step 8 | Op: Usage (HC10), 600.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 600.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,15,15,93.33333333333333,42.9010238799965,True,0,0,0,2,0,"Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 7.0 litre) | Cost: 21.000 | Dur: 35.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (C: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 5 | Op: Connect(HC20_Out1 -> HC40_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 7 | Op: Stirring (HC40), 200rpm for 900.0s | Cost: 4.000 | Dur: 900.000
+Step 8 | Op: Usage (HC40), 3300.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 700.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out2 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 7.0 litre) | Cost: 21.000 | Dur: 70.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (C: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 5 | Op: Connect(HC20_Out1 -> HC40_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Stirring (HC40), 200rpm for 900.0s | Cost: 4.000 | Dur: 900.000
+Step 8 | Op: Usage (HC40), 3300.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 700.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out2 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,39,15,100.0,42.890398079005536,True,0,0,0,0,0,"Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 9.0 litre) | Cost: 27.000 | Dur: 45.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 5 | Op: Connect(HC20_Out1 -> HC40_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Stirring (HC40), 50rpm for 800.0s | Cost: 4.000 | Dur: 800.000
+Step 8 | Op: Usage (HC40), 1700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 1000.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out2 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out3 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 9.0 litre) | Cost: 27.000 | Dur: 45.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 5 | Op: Connect(HC20_Out1 -> HC40_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Stirring (HC40), 50rpm for 800.0s | Cost: 4.000 | Dur: 800.000
+Step 8 | Op: Usage (HC40), 1700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 1000.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out3 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC20), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC30), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,20,15,0.0,45.152292952960124,True,12,0,0,0,1,"Step 1 | Op: Connect(HC20_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 1.0 litre) | Cost: 3.000 | Dur: 5.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 7 | Op: Stirring (HC10), 100rpm for 200.0s | Cost: 1.000 | Dur: 200.000
+Step 8 | Op: Usage (HC10), 3000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 100.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out3 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 3 | Op: Connect(HC40_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (C: 1.0 litre) | Cost: 3.000 | Dur: 5.000
+Step 5 | Op: Connect(HC30_Out1 -> HC20_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (A: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 7 | Op: Stirring (HC20), 100rpm for 200.0s | Cost: 2.000 | Dur: 200.000
+Step 8 | Op: Usage (HC20), 3000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 100.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC30), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out3 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC40), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,11,15,100.0,42.7722645039903,True,0,0,0,0,0,"Step 1 | Op: Connect(HC30_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (A: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 3 | Op: Connect(HC40_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 5 | Op: Connect(HC10_Out1 -> HC30_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC30), 100rpm for 800.0s | Cost: 3.000 | Dur: 800.000
+Step 8 | Op: Usage (HC30), 2200.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 300.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC10), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC40), (B: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (A: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 3 | Op: Connect(HC40_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 5 | Op: Connect(HC10_Out1 -> HC30_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC30), 100rpm for 800.0s | Cost: 3.000 | Dur: 800.000
+Step 8 | Op: Usage (HC30), 2200.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 300.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC10), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC40), (B: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,33,15,100.0,42.62668141297763,True,0,0,0,0,0,"Step 1 | Op: Connect(HC30_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 13.0 litre) | Cost: 39.000 | Dur: 130.000
+Step 3 | Op: Connect(HC20_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (A: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC40_Out1 -> HC30_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (C: 7.0 litre) | Cost: 21.000 | Dur: 35.000
+Step 7 | Op: Stirring (HC30), 50rpm for 500.0s | Cost: 3.000 | Dur: 500.000
+Step 8 | Op: Usage (HC30), 1100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 600.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC40), (C: 7.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC20), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 13.0 litre) | Cost: 39.000 | Dur: 130.000
+Step 3 | Op: Connect(HC20_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (A: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC40_Out1 -> HC30_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (C: 7.0 litre) | Cost: 21.000 | Dur: 35.000
+Step 7 | Op: Stirring (HC30), 50rpm for 500.0s | Cost: 3.000 | Dur: 500.000
+Step 8 | Op: Usage (HC30), 1100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 600.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out3 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC40), (C: 7.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out2 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC20), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,37,15,90.0,42.563867107004626,True,0,0,0,3,0,"Step 1 | Op: Connect(HC30_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 11.0 litre) | Cost: 33.000 | Dur: 110.000
+Step 3 | Op: Connect(HC20_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 5 | Op: Connect(HC10_Out1 -> HC30_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 4.0 litre) | Cost: 12.000 | Dur: 13.333
+Step 7 | Op: Stirring (HC30), 100rpm for 100.0s | Cost: 3.000 | Dur: 100.000
+Step 8 | Op: Usage (HC30), 500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 200.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC10), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC20), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 11.0 litre) | Cost: 33.000 | Dur: 55.000
+Step 3 | Op: Connect(HC20_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (A: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 5 | Op: Connect(HC10_Out1 -> HC30_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Stirring (HC30), 100rpm for 100.0s | Cost: 3.000 | Dur: 100.000
+Step 8 | Op: Usage (HC30), 500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 200.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC10), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC20), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,13,15,80.0,42.67630240609287,True,1,0,0,2,0,"Step 1 | Op: Connect(HC30_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 3 | Op: Connect(HC10_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC20_Out1 -> HC30_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (A: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 7 | Op: Stirring (HC30), 300rpm for 100.0s | Cost: 2.000 | Dur: 100.000
+Step 8 | Op: Usage (HC30), 4700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 100.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC20), (A: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC10), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 11.0 litre) | Cost: 33.000 | Dur: 110.000
+Step 3 | Op: Connect(HC10_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 1.0 litre) | Cost: 3.000 | Dur: 5.000
+Step 5 | Op: Connect(HC20_Out1 -> HC30_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (A: 5.0 litre) | Cost: 15.000 | Dur: 16.667
+Step 7 | Op: Stirring (HC30), 300rpm for 100.0s | Cost: 2.000 | Dur: 100.000
+Step 8 | Op: Usage (HC30), 4700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 100.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC20), (A: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC10), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,38,15,100.0,42.74306362500647,True,0,0,0,0,0,"Step 1 | Op: Connect(HC10_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 7.0 litre) | Cost: 21.000 | Dur: 70.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 7 | Op: Stirring (HC10), 200rpm for 900.0s | Cost: 3.000 | Dur: 900.000
+Step 8 | Op: Usage (HC10), 3100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 500.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC40), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 7.0 litre) | Cost: 21.000 | Dur: 70.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 7 | Op: Stirring (HC10), 200rpm for 900.0s | Cost: 3.000 | Dur: 900.000
+Step 8 | Op: Usage (HC10), 3100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 500.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out3 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,47,15,96.66666666666667,42.72930046796682,True,0,0,0,1,0,"Step 1 | Op: Connect(HC20_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 3 | Op: Connect(HC30_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (A: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 5 | Op: Connect(HC10_Out1 -> HC20_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (B: 5.0 litre) | Cost: 15.000 | Dur: 25.000
+Step 7 | Op: Stirring (HC20), 250rpm for 1000.0s | Cost: 3.000 | Dur: 1000.000
+Step 8 | Op: Usage (HC20), 500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 400.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out2 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC10), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out3 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC30), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 3 | Op: Connect(HC30_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (A: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 5 | Op: Connect(HC10_Out1 -> HC20_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (B: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 7 | Op: Stirring (HC20), 250rpm for 1000.0s | Cost: 3.000 | Dur: 1000.000
+Step 8 | Op: Usage (HC20), 500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 400.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out3 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC10), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC30), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,17,16,96.875,45.28336197201861,True,0,0,0,1,0,"Step 1 | Op: Connect(HC20_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 3 | Op: Connect(HC10_Out1 -> HC30_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC40_Out1 -> HC30_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (A: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 7 | Op: Stirring (HC30), 250rpm for 400.0s | Cost: 2.000 | Dur: 400.000
+Step 8 | Op: Usage (HC30), 4200.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 500.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC40), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC10), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC30_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (B: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 3 | Op: Connect(HC10_Out1 -> HC30_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC40_Out1 -> HC30_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (A: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 7 | Op: Stirring (HC30), 250rpm for 400.0s | Cost: 2.000 | Dur: 400.000
+Step 8 | Op: Usage (HC30), 4200.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 500.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC40), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC10), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC30_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (B: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,25,16,90.625,45.16785559296841,True,0,0,0,3,0,"Step 1 | Op: Connect(HC10_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (B: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 3 | Op: Connect(HC30_Out1 -> HC20_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 4.0 litre) | Cost: 12.000 | Dur: 13.333
+Step 5 | Op: Connect(HC40_Out1 -> HC20_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (A: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 7 | Op: Stirring (HC20), 200rpm for 600.0s | Cost: 3.000 | Dur: 600.000
+Step 8 | Op: Usage (HC20), 1500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 600.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out2 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC40), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC20_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC20_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 3 | Op: Connect(HC30_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC40_Out1 -> HC20_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (A: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 7 | Op: Stirring (HC20), 200rpm for 600.0s | Cost: 3.000 | Dur: 600.000
+Step 8 | Op: Usage (HC20), 1500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 600.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out2 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC20_Out3 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC10), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,26,16,100.0,45.32310371292988,True,0,0,0,0,0,"Step 1 | Op: Connect(HC20_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (A: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 3 | Op: Connect(HC30_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 5 | Op: Connect(HC40_Out1 -> HC10_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC10), 200rpm for 600.0s | Cost: 3.000 | Dur: 600.000
+Step 8 | Op: Usage (HC10), 3100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 700.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (C: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (A: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 3 | Op: Connect(HC30_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 5 | Op: Connect(HC40_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC10), 200rpm for 600.0s | Cost: 3.000 | Dur: 600.000
+Step 8 | Op: Usage (HC10), 3100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 700.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (C: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out3 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,28,16,100.0,45.18624883398297,True,0,0,0,0,0,"Step 1 | Op: Connect(HC20_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 3 | Op: Connect(HC10_Out1 -> HC40_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 5 | Op: Connect(HC30_Out1 -> HC40_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Stirring (HC40), 300rpm for 200.0s | Cost: 1.000 | Dur: 200.000
+Step 8 | Op: Usage (HC40), 5000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 400.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC30), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out3 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC40_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC40_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 3 | Op: Connect(HC10_Out1 -> HC40_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 5 | Op: Connect(HC30_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Stirring (HC40), 300rpm for 200.0s | Cost: 1.000 | Dur: 200.000
+Step 8 | Op: Usage (HC40), 5000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 400.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC30), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out3 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC40_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,34,16,100.0,45.18509451398859,True,0,0,0,0,0,"Step 1 | Op: Connect(HC30_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (A: 4.0 litre) | Cost: 12.000 | Dur: 13.333
+Step 3 | Op: Connect(HC20_Out1 -> HC40_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 1.0 litre) | Cost: 3.000 | Dur: 3.333
+Step 7 | Op: Stirring (HC40), 50rpm for 200.0s | Cost: 4.000 | Dur: 200.000
+Step 8 | Op: Usage (HC40), 1500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 500.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out2 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC10), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out3 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC20), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC40_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC40_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (A: 4.0 litre) | Cost: 12.000 | Dur: 13.333
+Step 3 | Op: Connect(HC20_Out1 -> HC40_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 1.0 litre) | Cost: 3.000 | Dur: 3.333
+Step 7 | Op: Stirring (HC40), 50rpm for 200.0s | Cost: 4.000 | Dur: 200.000
+Step 8 | Op: Usage (HC40), 1500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC40), 500.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC40_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out2 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC40_Out3 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,35,16,100.0,45.43869040496065,True,0,0,0,0,0,"Step 1 | Op: Connect(HC20_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 7 | Op: Stirring (HC10), 300rpm for 500.0s | Cost: 3.000 | Dur: 500.000
+Step 8 | Op: Usage (HC10), 1900.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 800.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out3 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC10_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 7 | Op: Stirring (HC10), 300rpm for 500.0s | Cost: 3.000 | Dur: 500.000
+Step 8 | Op: Usage (HC10), 1900.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 800.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out3 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,44,16,12.5,45.11546200912562,True,7,0,0,0,0,"Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 5.0 litre) | Cost: 15.000 | Dur: 25.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC10), 200rpm for 500.0s | Cost: 1.000 | Dur: 500.000
+Step 8 | Op: Usage (HC10), 3900.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 100.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out3 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC40), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (A: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Stirring (HC40), 200rpm for 500.0s | Cost: 3.000 | Dur: 500.000
+Step 6 | Op: Connect(HC40_Out1 -> HC10_In1) for A_B_C_mixed | Cost: 2.000 | Dur: 3.000
+Step 7 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A_B_C_mixed: 10.0 litre) | Cost: 30.000 | Dur: 100.000
+Step 8 | Op: Usage (HC10), 3900.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 100.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out3 -> HC40_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC40), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,46,16,100.0,45.137375917023746,True,0,0,0,0,0,"Step 1 | Op: Connect(HC20_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 7 | Op: Stirring (HC10), 200rpm for 600.0s | Cost: 4.000 | Dur: 600.000
+Step 8 | Op: Usage (HC10), 2700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 700.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC40), (B: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 7 | Op: Stirring (HC10), 200rpm for 600.0s | Cost: 4.000 | Dur: 600.000
+Step 8 | Op: Usage (HC10), 2700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 700.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (B: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out3 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,50,16,93.75,45.03878943997552,True,0,0,0,2,0,"Step 1 | Op: Connect(HC30_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (B: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 3 | Op: Connect(HC40_Out1 -> HC20_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC10_Out1 -> HC20_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC20), 50rpm for 600.0s | Cost: 2.000 | Dur: 600.000
+Step 8 | Op: Usage (HC20), 500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 200.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC10), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out3 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC40), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC20_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC20_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (B: 4.0 litre) | Cost: 12.000 | Dur: 13.333
+Step 3 | Op: Connect(HC40_Out1 -> HC20_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC10_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 7 | Op: Stirring (HC20), 50rpm for 600.0s | Cost: 2.000 | Dur: 600.000
+Step 8 | Op: Usage (HC20), 500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 200.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out2 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC40), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC20_Out3 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC30), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,54,16,100.0,45.20061784685822,True,0,0,0,0,0,"Step 1 | Op: Connect(HC20_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 6.0 litre) | Cost: 18.000 | Dur: 20.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 3.0 litre) | Cost: 9.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC10), 200rpm for 600.0s | Cost: 4.000 | Dur: 600.000
+Step 8 | Op: Usage (HC10), 3100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 700.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC40), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (B: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 6.0 litre) | Cost: 18.000 | Dur: 20.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 3.0 litre) | Cost: 9.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC10), 200rpm for 600.0s | Cost: 4.000 | Dur: 600.000
+Step 8 | Op: Usage (HC10), 3100.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 700.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC40), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (B: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,61,16,100.0,45.22201775002759,True,0,0,0,0,0,"Step 1 | Op: Connect(HC40_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (B: 3.0 litre) | Cost: 9.000 | Dur: 10.000
+Step 3 | Op: Connect(HC10_Out1 -> HC20_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 5 | Op: Connect(HC30_Out1 -> HC20_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 5.0 litre) | Cost: 15.000 | Dur: 16.667
+Step 7 | Op: Stirring (HC20), 200rpm for 300.0s | Cost: 1.000 | Dur: 300.000
+Step 8 | Op: Usage (HC20), 2700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 400.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out2 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC30), (C: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out3 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC10), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC20_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC20_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (B: 3.0 litre) | Cost: 9.000 | Dur: 10.000
+Step 3 | Op: Connect(HC10_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 5 | Op: Connect(HC30_Out1 -> HC20_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 5.0 litre) | Cost: 15.000 | Dur: 16.667
+Step 7 | Op: Stirring (HC20), 200rpm for 300.0s | Cost: 1.000 | Dur: 300.000
+Step 8 | Op: Usage (HC20), 2700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 400.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out2 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC30), (C: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out3 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC10), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC20_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,62,16,100.0,45.18863850698108,True,0,0,0,0,0,"Step 1 | Op: Connect(HC40_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 3 | Op: Connect(HC10_Out1 -> HC30_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC20_Out1 -> HC30_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Stirring (HC30), 200rpm for 200.0s | Cost: 2.000 | Dur: 200.000
+Step 8 | Op: Usage (HC30), 1600.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 500.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC20), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC10), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC30_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 3 | Op: Connect(HC10_Out1 -> HC30_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC20_Out1 -> HC30_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Stirring (HC30), 200rpm for 200.0s | Cost: 2.000 | Dur: 200.000
+Step 8 | Op: Usage (HC30), 1600.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 500.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC10), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC30_Out3 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC40), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,65,16,100.0,45.0921655180573,True,0,0,0,0,0,"Step 1 | Op: Connect(HC20_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 3 | Op: Connect(HC10_Out1 -> HC30_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 5 | Op: Connect(HC40_Out1 -> HC30_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 7 | Op: Stirring (HC30), 150rpm for 400.0s | Cost: 4.000 | Dur: 400.000
+Step 8 | Op: Usage (HC30), 2400.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 300.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out2 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC40), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out3 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC10), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC30_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC30_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 3 | Op: Connect(HC10_Out1 -> HC30_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 5 | Op: Connect(HC40_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 7 | Op: Stirring (HC30), 150rpm for 400.0s | Cost: 4.000 | Dur: 400.000
+Step 8 | Op: Usage (HC30), 2400.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC30), 300.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC30_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC30_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC10), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC30_Out3 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC20), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,66,16,93.75,45.10382218795712,True,0,0,0,2,0,"Step 1 | Op: Connect(HC30_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 3 | Op: Connect(HC40_Out1 -> HC20_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (A: 3.0 litre) | Cost: 9.000 | Dur: 10.000
+Step 5 | Op: Connect(HC10_Out1 -> HC20_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 4.0 litre) | Cost: 12.000 | Dur: 13.333
+Step 7 | Op: Stirring (HC20), 50rpm for 100.0s | Cost: 1.000 | Dur: 100.000
+Step 8 | Op: Usage (HC20), 200.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 100.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out2 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC10), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out3 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC40), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC20_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC20_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 3 | Op: Connect(HC40_Out1 -> HC20_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (A: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 5 | Op: Connect(HC10_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 7 | Op: Stirring (HC20), 50rpm for 100.0s | Cost: 1.000 | Dur: 100.000
+Step 8 | Op: Usage (HC20), 200.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 100.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out2 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC10), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out3 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC40), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC20_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,73,16,100.0,45.16286569996737,True,0,0,0,0,0,"Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 6.0 litre) | Cost: 18.000 | Dur: 20.000
+Step 7 | Op: Stirring (HC10), 150rpm for 100.0s | Cost: 1.000 | Dur: 100.000
+Step 8 | Op: Usage (HC10), 2000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 700.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC10_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 6.0 litre) | Cost: 18.000 | Dur: 20.000
+Step 7 | Op: Stirring (HC10), 150rpm for 100.0s | Cost: 1.000 | Dur: 100.000
+Step 8 | Op: Usage (HC10), 2000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 700.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (A: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,16,17,94.11764705882354,48.87143300494063,True,0,0,0,2,0,"Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 10.0 litre) | Cost: 30.000 | Dur: 50.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (A: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 7 | Op: Connect(HC20_Out1 -> HC40_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 9 | Op: Stirring (HC40), 50rpm for 700.0s | Cost: 4.000 | Dur: 700.000
+Step 10 | Op: Usage (HC40), 700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC40), 900.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC40_Out3 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 10.0 litre) | Cost: 30.000 | Dur: 100.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (A: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 7 | Op: Connect(HC20_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 9 | Op: Stirring (HC40), 50rpm for 700.0s | Cost: 4.000 | Dur: 700.000
+Step 10 | Op: Usage (HC40), 700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC40), 900.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC40_Out3 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,53,17,100.0,48.75362750107888,True,0,0,0,0,0,"Step 1 | Op: Connect(HC10_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (B: 14.0 litre) | Cost: 42.000 | Dur: 140.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Connect(HC20_Out1 -> HC10_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 9 | Op: Stirring (HC10), 150rpm for 600.0s | Cost: 1.000 | Dur: 600.000
+Step 10 | Op: Usage (HC10), 400.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 500.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (C: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out3 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC40), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (B: 14.0 litre) | Cost: 42.000 | Dur: 140.000
+Step 3 | Op: Connect(HC40_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Connect(HC20_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 9 | Op: Stirring (HC10), 150rpm for 600.0s | Cost: 1.000 | Dur: 600.000
+Step 10 | Op: Usage (HC10), 400.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 500.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (C: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out2 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,30,17,97.05882352941177,48.70252590000746,True,0,0,0,1,0,"Step 1 | Op: Connect(HC20_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 10.0 litre) | Cost: 30.000 | Dur: 100.000
+Step 3 | Op: Connect(HC40_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (C: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 5 | Op: Connect(HC10_Out1 -> HC20_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 7.0 litre) | Cost: 21.000 | Dur: 70.000
+Step 7 | Op: Connect(HC30_Out1 -> HC20_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (B: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 9 | Op: Stirring (HC20), 100rpm for 200.0s | Cost: 1.000 | Dur: 200.000
+Step 10 | Op: Usage (HC20), 400.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC20), 200.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC20_Out3 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC10), (A: 7.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC20_Out2 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC40), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 10.0 litre) | Cost: 30.000 | Dur: 100.000
+Step 3 | Op: Connect(HC40_Out1 -> HC20_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (C: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 5 | Op: Connect(HC10_Out1 -> HC20_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 7.0 litre) | Cost: 21.000 | Dur: 23.333
+Step 7 | Op: Connect(HC30_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (B: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 9 | Op: Stirring (HC20), 100rpm for 200.0s | Cost: 1.000 | Dur: 200.000
+Step 10 | Op: Usage (HC20), 400.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC20), 200.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC20_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC10), (A: 7.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC20_Out3 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC40), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,57,17,100.0,49.949494917935226,True,0,0,0,0,0,"Step 1 | Op: Connect(HC40_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 7.0 litre) | Cost: 21.000 | Dur: 70.000
+Step 3 | Op: Connect(HC20_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 7.0 litre) | Cost: 21.000 | Dur: 35.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 1.0 litre) | Cost: 3.000 | Dur: 5.000
+Step 7 | Op: Connect(HC30_Out1 -> HC40_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 9 | Op: Stirring (HC40), 150rpm for 500.0s | Cost: 1.000 | Dur: 500.000
+Step 10 | Op: Usage (HC40), 600.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC40), 700.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC40_Out3 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC10), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC40_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (C: 7.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 7.0 litre) | Cost: 21.000 | Dur: 70.000
+Step 3 | Op: Connect(HC20_Out1 -> HC40_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (C: 7.0 litre) | Cost: 21.000 | Dur: 35.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 1.0 litre) | Cost: 3.000 | Dur: 5.000
+Step 7 | Op: Connect(HC30_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 9 | Op: Stirring (HC40), 150rpm for 500.0s | Cost: 1.000 | Dur: 500.000
+Step 10 | Op: Usage (HC40), 600.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC40), 700.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC40_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC10), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC40_Out3 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC20), (C: 7.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,19,17,100.0,50.931874214002164,True,0,0,0,0,0,"Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 8.0 litre) | Cost: 24.000 | Dur: 40.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 7 | Op: Connect(HC20_Out1 -> HC40_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 9 | Op: Stirring (HC40), 200rpm for 900.0s | Cost: 3.000 | Dur: 900.000
+Step 10 | Op: Usage (HC40), 1700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC40), 200.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out2 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC40_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 8.0 litre) | Cost: 24.000 | Dur: 40.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 7 | Op: Connect(HC20_Out1 -> HC40_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 9 | Op: Stirring (HC40), 200rpm for 900.0s | Cost: 3.000 | Dur: 900.000
+Step 10 | Op: Usage (HC40), 1700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC40), 200.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Connect(HC40_Out2 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC20), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC40_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,36,17,94.11764705882354,50.78338815397001,True,0,0,0,2,0,"Step 1 | Op: Connect(HC20_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 5.0 litre) | Cost: 15.000 | Dur: 25.000
+Step 3 | Op: Connect(HC10_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 5 | Op: Connect(HC40_Out1 -> HC20_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (B: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 7 | Op: Connect(HC30_Out1 -> HC20_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 9 | Op: Stirring (HC20), 300rpm for 300.0s | Cost: 3.000 | Dur: 300.000
+Step 10 | Op: Usage (HC20), 600.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC20), 1000.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC20_Out3 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC40), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC20_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC10), (A: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 5.0 litre) | Cost: 15.000 | Dur: 25.000
+Step 3 | Op: Connect(HC10_Out1 -> HC20_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 5 | Op: Connect(HC40_Out1 -> HC20_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Connect(HC30_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 9 | Op: Stirring (HC20), 300rpm for 300.0s | Cost: 3.000 | Dur: 300.000
+Step 10 | Op: Usage (HC20), 600.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC20), 1000.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC20_Out3 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC40), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC20_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC10), (A: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,23,17,97.05882352941177,50.839580093015684,True,0,0,0,1,0,"Step 1 | Op: Connect(HC20_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 9.0 litre) | Cost: 27.000 | Dur: 90.000
+Step 3 | Op: Connect(HC10_Out1 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (B: 5.0 litre) | Cost: 15.000 | Dur: 25.000
+Step 5 | Op: Connect(HC40_Out1 -> HC20_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (A: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 7 | Op: Connect(HC30_Out1 -> HC20_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 9 | Op: Stirring (HC20), 100rpm for 200.0s | Cost: 4.000 | Dur: 200.000
+Step 10 | Op: Usage (HC20), 1700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC20), 700.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out2 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC30), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC20_Out3 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC10), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 9.0 litre) | Cost: 27.000 | Dur: 90.000
+Step 3 | Op: Connect(HC10_Out1 -> HC20_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (B: 5.0 litre) | Cost: 15.000 | Dur: 25.000
+Step 5 | Op: Connect(HC40_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (A: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 7 | Op: Connect(HC30_Out1 -> HC20_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 9 | Op: Stirring (HC20), 100rpm for 200.0s | Cost: 4.000 | Dur: 200.000
+Step 10 | Op: Usage (HC20), 1700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC20), 700.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out2 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC30), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC20_Out3 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC10), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,0,17,97.05882352941177,50.912350090948166,True,0,0,0,1,0,"Step 1 | Op: Connect(HC10_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 9.0 litre) | Cost: 27.000 | Dur: 90.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (A: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC40_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Connect(HC30_Out1 -> HC10_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 9 | Op: Stirring (HC10), 250rpm for 600.0s | Cost: 4.000 | Dur: 600.000
+Step 10 | Op: Usage (HC10), 3500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 1000.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out3 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 9.0 litre) | Cost: 27.000 | Dur: 30.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (A: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC40_Out1 -> HC10_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Connect(HC30_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 9 | Op: Stirring (HC10), 250rpm for 600.0s | Cost: 4.000 | Dur: 600.000
+Step 10 | Op: Usage (HC10), 3500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 1000.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out2 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (A: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,10,17,97.05882352941177,51.05746098404052,True,0,0,0,1,0,"Step 1 | Op: Connect(HC10_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 7.0 litre) | Cost: 21.000 | Dur: 70.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 7 | Op: Connect(HC40_Out1 -> HC10_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 9 | Op: Stirring (HC10), 150rpm for 600.0s | Cost: 1.000 | Dur: 600.000
+Step 10 | Op: Usage (HC10), 2000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 400.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC10_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out2 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 7.0 litre) | Cost: 21.000 | Dur: 23.333
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 7 | Op: Connect(HC40_Out1 -> HC10_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 9 | Op: Stirring (HC10), 150rpm for 600.0s | Cost: 1.000 | Dur: 600.000
+Step 10 | Op: Usage (HC10), 2000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 400.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC10_Out2 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out3 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,21,17,97.05882352941177,50.936679387959884,True,0,0,0,1,0,"Step 1 | Op: Connect(HC10_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 13.0 litre) | Cost: 39.000 | Dur: 43.333
+Step 3 | Op: Connect(HC30_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 4.0 litre) | Cost: 12.000 | Dur: 13.333
+Step 5 | Op: Connect(HC20_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 7 | Op: Connect(HC40_Out1 -> HC10_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 9 | Op: Stirring (HC10), 250rpm for 500.0s | Cost: 2.000 | Dur: 500.000
+Step 10 | Op: Usage (HC10), 3300.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 400.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out3 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 13.0 litre) | Cost: 39.000 | Dur: 130.000
+Step 3 | Op: Connect(HC30_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 4.0 litre) | Cost: 12.000 | Dur: 13.333
+Step 5 | Op: Connect(HC20_Out1 -> HC10_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 7 | Op: Connect(HC40_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (B: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 9 | Op: Stirring (HC10), 250rpm for 500.0s | Cost: 2.000 | Dur: 500.000
+Step 10 | Op: Usage (HC10), 3300.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 400.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC40), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out3 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,68,17,88.23529411764706,51.131568584998604,True,0,0,0,4,0,"Step 1 | Op: Connect(HC10_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 3 | Op: Connect(HC30_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 3.0 litre) | Cost: 9.000 | Dur: 15.000
+Step 5 | Op: Connect(HC20_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 5.0 litre) | Cost: 15.000 | Dur: 25.000
+Step 7 | Op: Connect(HC40_Out1 -> HC10_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 9 | Op: Stirring (HC10), 200rpm for 500.0s | Cost: 4.000 | Dur: 500.000
+Step 10 | Op: Usage (HC10), 1700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 100.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC10_Out3 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 3 | Op: Connect(HC30_Out1 -> HC10_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (A: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 5 | Op: Connect(HC20_Out1 -> HC10_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 7 | Op: Connect(HC40_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (C: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 9 | Op: Stirring (HC10), 200rpm for 500.0s | Cost: 4.000 | Dur: 500.000
+Step 10 | Op: Usage (HC10), 1700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 100.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (C: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC10_Out3 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (B: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out2 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,45,17,97.05882352941177,50.69691209302982,True,0,0,0,1,0,"Step 1 | Op: Connect(HC40_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (A: 15.0 litre) | Cost: 45.000 | Dur: 50.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (C: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Connect(HC20_Out1 -> HC40_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 9 | Op: Stirring (HC40), 50rpm for 200.0s | Cost: 3.000 | Dur: 200.000
+Step 10 | Op: Usage (HC40), 300.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC40), 600.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC40_Out2 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC40_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (C: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (A: 15.0 litre) | Cost: 45.000 | Dur: 150.000
+Step 3 | Op: Connect(HC30_Out1 -> HC40_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (C: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 5 | Op: Connect(HC10_Out1 -> HC40_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Connect(HC20_Out1 -> HC40_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (A: 2.0 litre) | Cost: 6.000 | Dur: 6.667
+Step 9 | Op: Stirring (HC40), 50rpm for 200.0s | Cost: 3.000 | Dur: 200.000
+Step 10 | Op: Usage (HC40), 300.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC40), 600.0s: Settling | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC20), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC40_Out2 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC40_Out2 only, Draining(HC40), Filling(HC10), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC40_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC40_Out3 only, Draining(HC40), Filling(HC30), (C: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,5,17,97.05882352941177,50.72276995604625,True,0,0,0,1,0,"Step 1 | Op: Connect(HC10_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 10.0 litre) | Cost: 30.000 | Dur: 100.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 7 | Op: Connect(HC40_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 9 | Op: Stirring (HC10), 150rpm for 200.0s | Cost: 1.000 | Dur: 200.000
+Step 10 | Op: Usage (HC10), 1800.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 900.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC10_Out3 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (B: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 10.0 litre) | Cost: 30.000 | Dur: 33.333
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 6.0 litre) | Cost: 18.000 | Dur: 60.000
+Step 7 | Op: Connect(HC40_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 3.0 litre) | Cost: 9.000 | Dur: 30.000
+Step 9 | Op: Stirring (HC10), 150rpm for 200.0s | Cost: 1.000 | Dur: 200.000
+Step 10 | Op: Usage (HC10), 1800.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 900.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC10_Out3 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (B: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (C: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,72,17,100.0,50.72420194695587,True,0,0,0,0,0,"Step 1 | Op: Connect(HC10_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 8.0 litre) | Cost: 24.000 | Dur: 40.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 7 | Op: Connect(HC40_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 9 | Op: Stirring (HC10), 150rpm for 700.0s | Cost: 1.000 | Dur: 700.000
+Step 10 | Op: Usage (HC10), 2400.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 900.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC10_Out3 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC30), (B: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out2 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (C: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC10_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 8.0 litre) | Cost: 24.000 | Dur: 40.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In2) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (C: 5.0 litre) | Cost: 15.000 | Dur: 50.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (B: 1.0 litre) | Cost: 3.000 | Dur: 10.000
+Step 7 | Op: Connect(HC40_Out1 -> HC10_In3) for A | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 9 | Op: Stirring (HC10), 150rpm for 700.0s | Cost: 1.000 | Dur: 700.000
+Step 10 | Op: Usage (HC10), 2400.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC10), 900.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC10_Out2 -> HC30_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (B: 1.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC10_Out3 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (C: 5.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+train,14,17,100.0,50.57890396696166,True,0,0,0,0,0,"Step 1 | Op: Connect(HC30_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 10.0 litre) | Cost: 30.000 | Dur: 50.000
+Step 3 | Op: Connect(HC40_Out1 -> HC30_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 5 | Op: Connect(HC20_Out1 -> HC30_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Connect(HC10_Out1 -> HC30_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 9 | Op: Stirring (HC30), 300rpm for 400.0s | Cost: 2.000 | Dur: 400.000
+Step 10 | Op: Usage (HC30), 2000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC30), 300.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC30_Out3 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC20), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC30_Out2 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC40), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 10.0 litre) | Cost: 30.000 | Dur: 50.000
+Step 3 | Op: Connect(HC40_Out1 -> HC30_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 5 | Op: Connect(HC20_Out1 -> HC30_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (B: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Connect(HC10_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 6.0 litre) | Cost: 18.000 | Dur: 30.000
+Step 9 | Op: Stirring (HC30), 300rpm for 400.0s | Cost: 2.000 | Dur: 400.000
+Step 10 | Op: Usage (HC30), 2000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC30), 300.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 6.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC30_Out3 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC20), (B: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC30_Out2 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC40), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"
+val,0,15,100.0,44.392847487004474,True,0,0,0,0,0,"Step 1 | Op: Connect(HC20_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 8.0 litre) | Cost: 24.000 | Dur: 80.000
+Step 3 | Op: Connect(HC30_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC10_Out1 -> HC20_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC20), 250rpm for 700.0s | Cost: 3.000 | Dur: 700.000
+Step 8 | Op: Usage (HC20), 2000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 900.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC10), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC20_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 8.0 litre) | Cost: 24.000 | Dur: 80.000
+Step 3 | Op: Connect(HC30_Out1 -> HC20_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC20), (C: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC10_Out1 -> HC20_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC20), (A: 2.0 litre) | Cost: 6.000 | Dur: 10.000
+Step 7 | Op: Stirring (HC20), 250rpm for 700.0s | Cost: 3.000 | Dur: 700.000
+Step 8 | Op: Usage (HC20), 2000.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC20), 900.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 10 | Op: Connect(HC20_Out2 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC20_Out2 only, Draining(HC20), Filling(HC10), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC20_Out3 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC20_Out3 only, Draining(HC20), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Separation: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC40), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: End | Cost: 0.000 | Dur: 0.000"
+val,3,16,100.0,46.9550629130099,True,0,0,0,0,0,"Step 1 | Op: Connect(HC40_Out1 -> HC10_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In2) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In3) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 7 | Op: Stirring (HC10), 200rpm for 800.0s | Cost: 2.000 | Dur: 800.000
+Step 8 | Op: Usage (HC10), 1500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 900.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out2 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out3 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC20), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out1 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC40), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC40_Out1 -> HC10_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC10), (A: 2.0 litre) | Cost: 6.000 | Dur: 20.000
+Step 3 | Op: Connect(HC20_Out1 -> HC10_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC10), (B: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 5 | Op: Connect(HC30_Out1 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC10), (C: 4.0 litre) | Cost: 12.000 | Dur: 20.000
+Step 7 | Op: Stirring (HC10), 200rpm for 800.0s | Cost: 2.000 | Dur: 800.000
+Step 8 | Op: Usage (HC10), 1500.0s: None | Cost: 0.000 | Dur: 0.000
+Step 9 | Op: Settling (HC10), 900.0s: Settling | Cost: 1.000 | Dur: 0.000
+Step 10 | Op: Connect(HC10_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 11 | Op: Separation: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 12 | Op: Connect(HC10_Out2 -> HC20_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 13 | Op: Separation: Open Valve of HC10_Out2 only, Draining(HC10), Filling(HC20), (B: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 14 | Op: Connect(HC10_Out3 -> HC40_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 15 | Op: Separation: Open Valve of HC10_Out3 only, Draining(HC10), Filling(HC40), (A: 2.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 16 | Op: End | Cost: 0.000 | Dur: 0.000"
+val,2,17,100.0,50.64858965706662,True,0,0,0,0,0,"Step 1 | Op: Connect(HC30_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 15.0 litre) | Cost: 45.000 | Dur: 75.000
+Step 3 | Op: Connect(HC10_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 3.0 litre) | Cost: 9.000 | Dur: 10.000
+Step 5 | Op: Connect(HC20_Out1 -> HC30_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Connect(HC40_Out1 -> HC30_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 3.0 litre) | Cost: 9.000 | Dur: 10.000
+Step 9 | Op: Stirring (HC30), 50rpm for 300.0s | Cost: 2.000 | Dur: 300.000
+Step 10 | Op: Usage (HC30), 700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC30), 600.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC30_Out3 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC20), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC30_Out2 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC10), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000","Analysis: Feasible
+
+Plan:
+Step 1 | Op: Connect(HC30_Out1 -> HC40_In1) for B | Cost: 2.000 | Dur: 3.000
+Step 2 | Op: Dosing: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 15.0 litre) | Cost: 45.000 | Dur: 75.000
+Step 3 | Op: Connect(HC10_Out1 -> HC30_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 4 | Op: Dosing: Open Valve of HC10_Out1 only, Draining(HC10), Filling(HC30), (C: 3.0 litre) | Cost: 9.000 | Dur: 10.000
+Step 5 | Op: Connect(HC20_Out1 -> HC30_In2) for A | Cost: 2.000 | Dur: 3.000
+Step 6 | Op: Dosing: Open Valve of HC20_Out1 only, Draining(HC20), Filling(HC30), (A: 4.0 litre) | Cost: 12.000 | Dur: 40.000
+Step 7 | Op: Connect(HC40_Out1 -> HC30_In3) for B | Cost: 2.000 | Dur: 3.000
+Step 8 | Op: Dosing: Open Valve of HC40_Out1 only, Draining(HC40), Filling(HC30), (B: 3.0 litre) | Cost: 9.000 | Dur: 10.000
+Step 9 | Op: Stirring (HC30), 50rpm for 300.0s | Cost: 2.000 | Dur: 300.000
+Step 10 | Op: Usage (HC30), 700.0s: None | Cost: 0.000 | Dur: 0.000
+Step 11 | Op: Settling (HC30), 600.0s: Settling | Cost: 2.000 | Dur: 0.000
+Step 12 | Op: Separation: Open Valve of HC30_Out1 only, Draining(HC30), Filling(HC40), (B: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 13 | Op: Connect(HC30_Out2 -> HC20_In1) for A | Cost: 2.000 | Dur: 3.000
+Step 14 | Op: Separation: Open Valve of HC30_Out2 only, Draining(HC30), Filling(HC20), (A: 4.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 15 | Op: Connect(HC30_Out3 -> HC10_In1) for C | Cost: 2.000 | Dur: 3.000
+Step 16 | Op: Separation: Open Valve of HC30_Out3 only, Draining(HC30), Filling(HC10), (C: 3.0 litre) | Cost: 3.000 | Dur: 0.000
+Step 17 | Op: End | Cost: 0.000 | Dur: 0.000"

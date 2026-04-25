@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "Verified LLM-Assisted Process Planning for Capability- and Skill-Based Modular Plants"
+message: "If you use this repository, please cite the associated paper."
+type: software
+authors:
+  - family-names: "Chen"
+    given-names: "Bowen"
+  - family-names: "Zhao"
+    given-names: "Yuanchen"
+  - family-names: "Miny"
+    given-names: "Torben"
+  - family-names: "Kleinert"
+    given-names: "Tobias"
+repository-code: "https://github.com/rwth-iat/MP-LLM"
+license: "MIT"
+version: "0.1.0"
+date-released: "2026-04-25"

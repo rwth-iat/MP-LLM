@@ -1,0 +1,149 @@
+Terminal output is being saved to: /workspace/evaluation/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_terminal_20260226_141211.log
+Selected model dir: /workspace/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407
+Loading model and tokenizer...
+==((====))==  Unsloth 2026.2.1: Fast Llama patching. Transformers: 4.57.1. vLLM: 0.11.2.
+   \\   /|    NVIDIA GeForce RTX 3090. Num GPUs = 1. Max memory: 24.0 GB. Platform: Linux.
+O^O/ \_/ \    Torch: 2.9.0+cu128. CUDA: 8.6. CUDA Toolkit: 12.8. Triton: 3.5.0
+\        /    Bfloat16 = TRUE. FA [Xformers = 0.0.33.post1. FA2 = True]
+ "-____-"     Free license: http://github.com/unslothai/unsloth
+Unsloth: Fast downloading is enabled - ignore downloading bars which are red colored!
+Loading JSONL datasets...
+Train records: total=76, invalid_output_format=0, sampled=45
+Val records: total=9, invalid_output_format=0, sampled=3
+
+Train step-count totals:
+{15: 29, 16: 15, 17: 32}
+Train step-count sampled:
+{15: 15, 16: 15, 17: 15}
+
+Val step-count totals:
+{15: 2, 16: 1, 17: 6}
+Val step-count sampled:
+{15: 1, 16: 1, 17: 1}
+
+Combined step-count sampled (train+val):
+{15: 16, 16: 16, 17: 16}
+
+Running inference and scoring...
+[0001/0048] row=2 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.010s
+[0002/0048] row=27 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=96.67 latency=43.251s
+[0003/0048] row=6 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=43.136s
+[0004/0048] row=18 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=96.67 latency=43.157s
+[0005/0048] row=8 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=43.334s
+[0006/0048] row=24 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=42.874s
+[0007/0048] row=15 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=2 unparseable=No score=93.33 latency=42.901s
+[0008/0048] row=39 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=42.890s
+[0009/0048] row=20 steps=15 wrong_step=12 extra=1 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=0.00 latency=45.152s
+[0010/0048] row=11 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=42.772s
+[0011/0048] row=33 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=42.627s
+[0012/0048] row=37 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=3 unparseable=No score=90.00 latency=42.564s
+[0013/0048] row=13 steps=15 wrong_step=1 extra=0 missing=0 wrong_order=0 attr_mismatch=2 unparseable=No score=80.00 latency=42.676s
+[0014/0048] row=38 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=42.743s
+[0015/0048] row=47 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=96.67 latency=42.729s
+[0016/0048] row=17 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=96.88 latency=45.283s
+[0017/0048] row=25 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=3 unparseable=No score=90.62 latency=45.168s
+[0018/0048] row=26 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.323s
+[0019/0048] row=28 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.186s
+[0020/0048] row=34 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.185s
+[0021/0048] row=35 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.439s
+[0022/0048] row=44 steps=16 wrong_step=7 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=12.50 latency=45.115s
+[0023/0048] row=46 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.137s
+[0024/0048] row=50 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=2 unparseable=No score=93.75 latency=45.039s
+[0025/0048] row=54 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.201s
+[0026/0048] row=61 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.222s
+[0027/0048] row=62 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.189s
+[0028/0048] row=65 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.092s
+[0029/0048] row=66 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=2 unparseable=No score=93.75 latency=45.104s
+[0030/0048] row=73 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=45.163s
+[0031/0048] row=16 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=2 unparseable=No score=94.12 latency=48.871s
+[0032/0048] row=53 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=48.754s
+[0033/0048] row=30 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=97.06 latency=48.703s
+[0034/0048] row=57 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=49.949s
+[0035/0048] row=19 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=50.932s
+[0036/0048] row=36 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=2 unparseable=No score=94.12 latency=50.783s
+[0037/0048] row=23 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=97.06 latency=50.840s
+[0038/0048] row=0 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=97.06 latency=50.912s
+[0039/0048] row=10 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=97.06 latency=51.057s
+[0040/0048] row=21 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=97.06 latency=50.937s
+[0041/0048] row=68 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=4 unparseable=No score=88.24 latency=51.132s
+[0042/0048] row=45 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=97.06 latency=50.697s
+[0043/0048] row=5 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=1 unparseable=No score=97.06 latency=50.723s
+[0044/0048] row=72 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=50.724s
+[0045/0048] row=14 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=50.579s
+[0046/0048] row=0 steps=15 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=44.393s
+[0047/0048] row=3 steps=16 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=46.955s
+[0048/0048] row=2 steps=17 wrong_step=0 extra=0 missing=0 wrong_order=0 attr_mismatch=0 unparseable=No score=100.00 latency=50.649s
+
+================================================================================
+Evaluation Summary
+================================================================================
+Model Name: waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407
+Base Model: unsloth/Meta-Llama-3.1-8B-Instruct-unsloth-bnb-4bit
+Model Directory: /workspace/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407
+Average Score: 93.6816
+Average Response Time (s): 46.3178
+Test Sample Count: 48
+
+Per-split summary:
+       sample_count   avg_score  avg_latency_s
+split                                         
+train            45   93.260349      46.250157
+val               3  100.000000      47.332167
+
+Step-count sample distribution (selected):
+split  step_count
+train  15            15
+       16            15
+       17            15
+val    15             1
+       16             1
+       17             1
+Name: count, dtype: int64
+
+Step-count total distribution (train+val):
+step_count
+15    16
+16    16
+17    16
+dtype: int64
+
+Step-count quality summary (train+val combined):
+            sample_count  avg_score  avg_wrong_step  avg_extra_step  \
+step_count                                                            
+15                    16  90.833333          0.8125          0.0625   
+16                    16  92.968750          0.4375          0.0000   
+17                    16  97.242647          0.0000          0.0000   
+
+            avg_missing  avg_wrong_order  avg_attr_mismatch  
+step_count                                                   
+15                  0.0              0.0             0.6250  
+16                  0.0              0.0             0.5000  
+17                  0.0              0.0             0.9375  
+
+Score distribution (bins):
+score
+[0.0, 20.0)       2
+[20.0, 40.0)      0
+[40.0, 60.0)      0
+[60.0, 80.0)      0
+[80.0, 90.0)      2
+[90.0, 95.0)      7
+[95.0, 100.0)    37
+Name: count, dtype: int64
+
+Latency distribution (bins):
+[42.5639, 43.7878) -> 13
+[43.7878, 45.0118) -> 2
+[45.0118, 46.2357) -> 16
+[46.2357, 47.4597) -> 1
+[47.4597, 48.6837) -> 0
+[48.6837, 49.9076) -> 3
+[49.9076, 51.1316) -> 13
+
+Saved report text: /workspace/evaluation/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_avg93.68_20260226_141211.txt
+Saved detailed csv: /workspace/evaluation/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_details_20260226_141211.csv
+Saved plot: /workspace/evaluation/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_step_distribution_20260226_141211.png
+Saved plot: /workspace/evaluation/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_quality_by_step_count_20260226_141211.png
+Saved plot: /workspace/evaluation/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_score_distribution_20260226_141211.png
+Saved plot: /workspace/evaluation/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_latency_distribution_20260226_141211.png
+Saved terminal log: /workspace/evaluation/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407/waben_lora_20260225_200658_r32_b4_ga4_lr2e-05_ep3_alp64_len2560_warmup0.05_drop0.0_decay0.01_neft0_sed3407_terminal_20260226_141211.log

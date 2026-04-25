@@ -1,0 +1,23 @@
+# Python dependencies
+PyQt6-Fluent-Widgets[full]
+pandas>=2.1
+pyomo>=6.8
+psutil>=5.9
+pyvis>=0.3
+packaging>=23
+typing_extensions>=4.8
+ipython>=8
+jupyterlab>=4
+
+# System/runtime dependencies (not installable via pip)
+# Qt/XCB/OpenGL runtime libraries used by the GUI on Linux/WSL:
+#   mamba install -y -c conda-forge libegl libgl libopengl
+#   mamba install -y -c conda-forge xcb-util xcb-util-cursor xcb-util-image \
+#       xcb-util-keysyms xcb-util-renderutil xcb-util-wm libxkbcommon \
+#       xorg-libxext xorg-libxrender xorg-libsm xorg-libxrandr \
+#       xorg-libxinerama xorg-libxi
+#
+# Install GLPK separately so Pyomo can use the default solver.
+# macOS (Homebrew): brew install glpk
+# Ubuntu/Debian: sudo apt-get install glpk-utils
+# Optional for better performance: install gurobipy and configure your own Gurobi license.
