@@ -133,7 +133,7 @@ Download the release ZIP that includes the `Model/` adapter weights, extract it,
 Inside the container, install the remaining project-specific dependencies:
 
 ```bash
-cd /workspace/work/ModPlant-LLM
+cd /ModPlant-LLM
 python -m pip install -r requirements.txt
 ```
 
