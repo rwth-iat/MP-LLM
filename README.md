@@ -1,6 +1,6 @@
 # ModPlant-LLM
 
-Software repository for the modular-plant process-planning workflow described in **Verified LLM-Assisted Process Planning for Capability- and Skill-Based Modular Plants** by Bowen Chen, Yuanchen Zhao, Torben Miny, and Tobias Kleinert.
+Software repository for the modular-plant process-planning workflow described in **Verified LLM-Assisted Process Planning for Modular Plants** by Bowen Chen, Yuanchen Zhao, Torben Miny, and Tobias Kleinert.
 
 `ModPlant-LLM` contains the software implementation associated with the paper, including the LoRA-finetuned language-model workflow, step-level FSA checking, the FSA+BFS+OPT verification/solver path, a Qt GUI, a notebook interface, packaged LoRA adapter directories, training/data-generation materials, and committed evaluation outputs.
 
@@ -210,7 +210,7 @@ Temporary recipe and corpus artifacts are normally disabled unless artifact pers
 If you use this repository, please cite the associated paper:
 
 > Bowen Chen, Yuanchen Zhao, Torben Miny, and Tobias Kleinert,  
-> *Verified LLM-Assisted Process Planning for Capability- and Skill-Based Modular Plants*.
+> *Verified LLM-Assisted Process Planning for Modular Plants*.
 
 See [CITATION.cff](CITATION.cff) for repository citation metadata.
 
