@@ -210,7 +210,7 @@ Temporary recipe and corpus artifacts are normally disabled unless artifact pers
 If you use this repository, please cite the associated paper:
 
 > Bowen Chen, Yuanchen Zhao, Torben Miny, and Tobias Kleinert,  
-> *Verified LLM-Assisted Process Planning for Modular Plants*.
+> *Verified LLM-Assisted Capability- and Skill-Based Process Planning Framework for Modular Plants*.
 
 See [CITATION.cff](CITATION.cff) for repository citation metadata.
 
